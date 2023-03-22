@@ -44,3 +44,45 @@ void create_graph()
     }
 }
 ```
+```
+/*
+Topological Sort
+
+inserting queue (vertex)
+
+variables using - rear , MAX , front , queue[] , vertex
+1. check overflow - 
+          when rear is equal to max - 1
+2. else 
+{
+    1. when queue is empty - front is 0; 
+    queue is empty when it is equal to -1
+       
+    2. else 
+    rear = ?   queue[rear] = ?
+    rear is equal to rear + -1
+    queue[rear] is vertex 
+}
+*/
+```
+```
+void insert_queue(int vertex)
+{
+    if(rear == MAX-1)
+    {
+        printf("Queue Overflow");
+    }
+    else
+    {
+        if(front==-1)
+        {
+            front =0;
+        }
+        else
+        {
+            rear=rear+1;
+            queue[rear]=vertex;
+        }
+    }
+}
+```
