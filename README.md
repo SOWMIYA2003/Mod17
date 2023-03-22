@@ -119,3 +119,50 @@ int delete_queue()
     }
 }
 ```
+```
+/*
+empty
+
+queue is empty when front is equal to -1 or 
+front is greater than rear
+```
+```
+int isEmpty_queue()
+{
+    if(front==-1||front>rear)
+    {
+        return  1;
+    }
+    else
+    {
+        return  0;
+    }
+}
+```
+```
+indegree
+
+1 . declare variable i and in_deg
+2 . assign in_deg is 0
+3 . for loop from 0 to n
+    {
+        when matrix of i , v is 1
+        increment in_deg;
+    }
+4 . return in_deg;
+*/
+```
+```
+int indegree(int v)
+{
+    int i,in_deg=0;
+    for(i=0;i<n;i++)
+    {
+        if( adj[i][v]==1)
+        {
+            in_deg++;
+        }
+    }
+    return in_deg;
+}
+```
