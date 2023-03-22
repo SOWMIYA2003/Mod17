@@ -86,3 +86,36 @@ void insert_queue(int vertex)
     }
 }
 ```
+```
+/*
+
+delete queue
+
+1 . declare item have to b deleted . 
+2 . check underflow 
+    when front is equal to -1 or front greater than rear 
+    print and exit(1);
+3 . else
+    assign variable = front of queue
+    inc front
+    return variable . 
+
+*/
+```
+```
+int delete_queue()
+{
+    int del_item;
+    if(front==-1||front>rear)
+    {
+        printf("Queue underflow");
+        exit(1);
+    }
+    else
+    {
+        del_item=queue[front];
+        front=front+1;
+        return del_item;
+    }
+}
+```
