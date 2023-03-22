@@ -27,6 +27,7 @@ void create_graph()
     max_edge=n*(n-1);
     for(i=1;i<=max_edge;i++)
     {
+        scanf("%d%d",&origin,&destin);
         if(origin==-1 && destin==-1)
         {
             break;
