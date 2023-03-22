@@ -13,7 +13,7 @@ creating graph
    {
        user ip - origin destin
        1. when origin and destin is -1 break ;
-       2. when origin , destin greater than and equal to 0 , 
+       2. when origin , destin greater than and equal to n , 
        when origin , destin lesser than 0 - the edge is invalid and drecrement i ;
        3. matrix with origin destin is equal to 1
    }
@@ -32,7 +32,7 @@ void create_graph()
         {
             break;
         }
-        if(origin>=0 || destin>=0 || origin<0 || destin<0)
+        if(origin>=n || destin>=n || origin<0 || destin<0)
         {
             printf("Invalid edge\n");
             i--;
